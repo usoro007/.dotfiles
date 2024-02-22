@@ -1,0 +1,10 @@
+" Type global file mark('G) to get to this vimrc plugin source file
+" Type ('E) for the python only plugin file
+call plug#begin('~/.vim/plugged')
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-commentary'
+Plug 'python/black'
+
+call plug#end()
