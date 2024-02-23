@@ -1,5 +1,6 @@
 "Type ('P) to bring me directly to my python configuration, when in vim
 "This merely adds to the std python settings. Thanks Leeren Chang!
+"https://www.youtube.com/watch?v=Gs1VDYnS-Ac&t=726s at timestamp 16:09
 
 set shiftwidth=4 tabstop=4 softtabstop=4 expandtab autoindent smartindent
 
