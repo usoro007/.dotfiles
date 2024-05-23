@@ -65,6 +65,8 @@ set hidden
 set noswapfile
 set path+=.,**
 set wildmenu
+set incsearch
+set statusline=%F[%L][%{&ff}]%y[%04l,%04v]
 "set mouse=a
 
 " Required to eliminate delays caused by plugins, like vim-airline. 
