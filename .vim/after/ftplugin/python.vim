@@ -31,7 +31,8 @@ function! PyInclude(fname)
 endfunction
 setlocal includeexpr=PyInclude(v:fname)
 
-setlocal define=^\\s*\\<\\(def\\\|class\\)\\>
+" setlocal define=^\\s*\\<\\(def\\\|class\\)\\>
+setlocal define=^\\s*\\(\\(async\\s\\+\\)\\?def\\\|class\\) "Courtesy of Vim https://github.com/vim/vim/blob/master/runtime/ftplugin/python.vim
 
 compiler python
 

@@ -69,6 +69,9 @@ set incsearch
 set statusline=%F[%L][%{&ff}]%y[%04l,%04v]
 "set mouse=a
 
+inoremap <nowait> jj <Esc>
+
+
 " Required to eliminate delays caused by plugins, like vim-airline. 
 " See https://vi.stackexchange.com/questions/3964/timeoutlen-breaks-leader-and-vim-commentary
 "set ttimeoutlen=100
@@ -110,6 +113,18 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 """See CoC Configuration above
+
+"Emmet config settings from https://github.com/mattn/emmet-vim?tab=readme-ov-file
+let g:user_emmet_install_global = 0
+let g:user_emmet_mode='n'
+let g:user_emmet_leader_key=','
+autocmd FileType html,css EmmetInstall
+
+let g:user_emmet_settings = {
+\    'html' : {
+\        'indentation' : ' '
+\    },
+\}
 
 " Type ('G) to access the .vim/vimrc.plug file
 if filereadable(expand("~/.vim/vimrc.plug"))

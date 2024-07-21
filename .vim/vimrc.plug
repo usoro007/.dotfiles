@@ -6,5 +6,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-commentary'
 Plug 'python/black'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
